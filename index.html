@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BOMBA CONFIG</title>
+</head>
+
+<body>
+
+    <label for="rangeBomb" id="rangeBomb">Distância da Bomba: <span id="demo"></span></label>
+    <input type="range" id="myRange" min="0" max="30" value="1">
+
+    <div class="controls">
+        <button type="button" id="bombOn">ATIVAR</button>
+        
+        <button type="button" id="bombOff">DESATIVAR</button>
+        
+        <div class="bombBox">
+            <div id="bombAlert"></div>
+            <p id="statusBomb">DESARMADO</p>
+        </div>
+    </div>
+
+    <img src="galinha-nuclear-bomb.gif" alt="" id="bombImg">
+    <h3 id="headerBomb"></h3>
+    <button type="button" id="restart" onclick="window.location.reload();">RECOMEÇAR</button>
+
+    <footer>
+        <p>Copyright &copy; | Lucas Montes de Oliveira e Ruan Mendes</p>
+    </footer>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
